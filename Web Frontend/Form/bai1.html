@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sở Thích Của Bạn</title>
+  <style>
+    /* Khung tổng thể */
+    .form-container {
+      width: 300px;
+      padding: 20px;
+      border: 2px solid #FF6600;
+      background-color: #E0F7FA;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Tiêu đề */
+    .form-container h2 {
+      background-color: #FF6600;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Khung nhập liệu và sở thích */
+    .form-container label {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"] {
+      width: 100%;
+      padding: 5px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Các tùy chọn sở thích */
+    .hobbies {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .hobbies label {
+      color: #FF6600;
+    }
+
+    /* Nút gửi và nhập lại */
+    .form-container button {
+      padding: 8px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      background-color: #333;
+      color: white;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+
+    .form-container button:hover {
+      background-color: #555;
+    }
+
+    .reset-btn {
+      background-color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>SỞ THÍCH CỦA BẠN</h2>
+  <form>
+    <label for="name">Họ và tên:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label>Sở thích:</label>
+    <div class="hobbies">
+      <label><input type="checkbox" name="hobby" value="the thao"> Thể thao</label>
+      <label><input type="checkbox" name="hobby" value="am nhac"> Âm nhạc</label>
+      <label><input type="checkbox" name="hobby" value="luot web"> Lướt web</label>
+      <label><input type="checkbox" name="hobby" value="choi game"> Chơi game</label>
+      <label><input type="checkbox" name="hobby" value="du lich"> Du lịch</label>
+    </div>
+
+    <button type="submit">Gửi thông tin</button>
+    <button type="reset" class="reset-btn">Nhập lại</button>
+  </form>
+</div>
+
+</body>
+</html>
