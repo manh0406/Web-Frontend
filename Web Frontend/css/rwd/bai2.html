@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    .gallery-item {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-item figcaption {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 700px) {
+        .gallery-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 500px) {
+        .gallery-container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<body>
+<div class="gallery-container">
+    <figure class="gallery-item">
+        <img src="hinh1.webp" alt="hinh 1" class="gallery-item">
+        <figcaption>Add a description of the image here</figcaption>
+    </figure>
+    <figure class="gallery-item">
+        <img src="hinh2.webp" alt="hinh 2" class="gallery-item">
+        <figcaption>Add a description of the image here</figcaption>
+    </figure>
+    <figure class="gallery-item">
+        <img src="hinh3.webp" alt="hinh 3" class="gallery-item">
+        <figcaption>Add a description of the image here</figcaption>
+    </figure>
+    <figure class="gallery-item">
+        <img src="hinh4.webp" alt="hinh 4" class="gallery-item">
+        <figcaption>Add a description of the image here</figcaption>
+    </figure>
+</div>
+</body>
+</html>
