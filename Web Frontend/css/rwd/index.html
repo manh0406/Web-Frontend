@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    .container-full {
+        width: 100%;
+
+    }
+
+    .header {
+        width: 100%;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.98);
+    }
+
+    .header-container {
+        width: 7%;
+        margin: 0 auto;
+        height: 100%;
+        background-color: bisque;
+    }
+.top-bar-conrtainer{
+    display: flex;
+    height: 56px;
+
+}
+  .top-bar-left {
+      display: flex;
+      font-size: 16px;
+  }
+  .item {
+      padding: 16px;
+
+  }
+  .top-bar-right {
+      display: flex;
+      margin-left: auto;
+  } .register-item a{
+        padding-right: 10px;
+        border-right: 1px solid black;
+      }
+</style>
+<body>
+<div class="container-full">
+    <header class="header">
+        <div class="header-container">
+            <div class="top-bar-conrtainer">
+                <div class="top-bar-left">
+                    <div class="item"><i class="fas fa-home"></i> +38 068 005 3570</div>
+                    <div class="item"><i class="fas fa-search"></i> fastsales@gmail.com</div>
+                </div>
+                <div class="top-bar-right">
+                    <div class="register-item"><a href="#">Đăng ký</a></div>
+                    <div class="register-item"><a href="#">Đăng nhập</a></div>
+                </div>
+                <div class="header-main">
+                    <div class="logo">
+                        <img src=""  class="text-logo" alt="OneTech">
+                    </div>
+                    <div class="search-container" style="flex-grow: 2">
+                        <frorm action="" class="form-search">
+                        <input type="text" id="input-search" placeholder="Search">
+                        <select name="search" id="search-select">
+                            <options value="all">All</options>
+                            <option value="electronics">Electronics</option>
+                            <option value="clothing">Clothing</option>
+                            <option value="home">Home</option>
+                            <option value="health">Health</option>
+                        </select>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </frorm>
+                </div>
+            </div>
+            </div>
+    </header>
+</div>
+</body>
+</html>

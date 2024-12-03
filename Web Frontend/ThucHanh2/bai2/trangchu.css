@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+.top-header {
+    display: flex;
+}
+
+.logo {
+    background-color: yellow;
+    width: 40%;
+    height: 80px;
+}
+
+
+.banner {
+    background-color: blue;
+    width: 60%;
+    height: 80px;
+}
+
+.main-header .nav {
+    display: flex;
+}
+
+.home {
+    background-color: blueviolet;
+    width: 10%;
+    height: 80px;
+}
+
+.product {
+    background-color: burlywood;
+    width: 20%;
+    height: 80px;
+}
+
+.space {
+    background-color: rgb(23, 118, 87);
+    width: 60%;
+    height: 80px;
+}
+
+.order {
+    background-color: blanchedalmond;
+    width: 10%;
+    height: 80px;
+}
+
+.main {
+    display: flex;
+}
+
+.side-bar {
+    background-color: saddlebrown;
+    width: 10%;
+    height: 200px;
+}
+
+.list-product {
+background-color:darkred;
+    width: 90%;
+    height: 200px;
+}
+
